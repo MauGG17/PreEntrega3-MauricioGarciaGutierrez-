@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+
+    width: 100%;
+}
+
+.logo{
+    width: 8%;
+    padding: 10px;
+}
+
+.menu{
+    margin-top: 15px;
+    list-style: none;
+}
+
+.menu-item{
+    font-size: 18px;
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.titulo-header{
+    padding: 20px;
+    text-align: center;
+    background-color:rgb(80, 80, 80);
+    color: #f5f5f5;
+}
+
+main{
+    height: 100%;
+}
+
+
+.empleados-card{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    width: 100%;
+}
+
+.empleados-imagen{
+    width: 100%;
+}
+
+.empleado-titulo{
+    color: white;
+    font-size: 20px;
+}
+
+.empleados-descripcion{
+
+    padding: 10px;
+    text-align: center;
+    background-color: #1b1b1c;
+    color: #f5f5f5;
+    font-size: 12px;
+}
+
+
+
+footer{
+    position: relative;
+    bottom: 0px;
+
+    background-color: #1b1b1c;;
+    padding: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 983px) {
+
+    .correo{
+        text-align: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu-item{
+        font-size: 15px;
+        color: #f5f5f5;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    .menu{
+        color: white;
+        font-size: 7px;
+        margin-left: 13px;
+    }
+    
+    .titulo-header{
+        display: none;
+    }
+
+    .titulo-encabezado {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .descripcion-encabezado{
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .empleados-imagen{
+        width: 100%;
+    }
+}

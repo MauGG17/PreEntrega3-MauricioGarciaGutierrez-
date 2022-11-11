@@ -1,0 +1,109 @@
+header {
+    width: 100%;
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+    }
+
+    .header-contacto{
+        background-color: $fondo_color;
+        padding: 12px;
+        text-align: right;
+        color: white;
+        font-weight: 600;
+        font-family: $letra_fuente;
+        font-size: 13px;
+    }
+
+    .header-contacto-email{
+        margin-right: 40px;
+    }
+
+    .contenedor-nav{
+        background-color: rgb(50, 50, 50);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenedor-nav-logo{
+        width: 30%;
+    }
+
+    .contenedor-nav-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding: 24px 12px;
+        width: 70%;
+
+        li{
+            list-style-type: none;
+            font-family: $letra_fuente;
+            font-weight: 700;
+            font-size: 16px;
+            margin-right: 40px;
+        }
+
+        li:hover{
+            text-decoration: underline;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+
+    header{
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 200;
+        }
+    
+        .header-contacto{
+            background-color: $fondo_color;
+            padding: 14px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            font-family: $letra_fuente;
+            font-size: 14px;
+        }
+
+        .header-contacto-email{
+            margin-right: 0px;
+        }
+
+        .contenedor-nav{
+            background-color: rgb(50, 50, 50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor-nav-logo{
+            display: none;
+        }
+
+        .contenedor-nav-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 17px 0px;
+            width: 100%;
+
+            li{
+                list-style-type: none;
+                font-family: $letra_fuente;
+                font-weight: 700;
+                font-size: 12px;
+                margin-right: 0px;
+            }
+        }
+    }
+}

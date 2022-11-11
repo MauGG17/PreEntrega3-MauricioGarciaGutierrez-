@@ -1,0 +1,879 @@
+header {
+  width: 100%; }
+  header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400; }
+  header .header-contacto {
+    background-color: black;
+    padding: 12px;
+    text-align: right;
+    color: white;
+    font-weight: 600;
+    font-family: "Arial";
+    font-size: 13px; }
+  header .header-contacto-email {
+    margin-right: 40px; }
+  header .contenedor-nav {
+    background-color: #323232;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  header .contenedor-nav-logo {
+    width: 30%; }
+  header .contenedor-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 24px 12px;
+    width: 70%; }
+    header .contenedor-nav-menu li {
+      list-style-type: none;
+      font-family: "Arial";
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 40px; }
+    header .contenedor-nav-menu li:hover {
+      text-decoration: underline; }
+
+@media only screen and (max-width: 800px) {
+  header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200; }
+  header .header-contacto {
+    background-color: black;
+    padding: 14px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-family: "Arial";
+    font-size: 14px; }
+  header .header-contacto-email {
+    margin-right: 0px; }
+  header .contenedor-nav {
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  header .contenedor-nav-logo {
+    display: none; }
+  header .contenedor-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 17px 0px;
+    width: 100%; }
+    header .contenedor-nav-menu li {
+      list-style-type: none;
+      font-family: "Arial";
+      font-weight: 700;
+      font-size: 12px;
+      margin-right: 0px; } }
+
+footer {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  bottom: 0; }
+  footer .footer-contenedor {
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    footer .footer-contenedor .footer-texto {
+      width: 90%;
+      font-family: "Arial";
+      font-size: 15px; }
+    footer .footer-contenedor .footer-redes-sociales {
+      width: 10%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      footer .footer-contenedor .footer-redes-sociales .footer-red {
+        width: 100%; }
+        footer .footer-contenedor .footer-redes-sociales .footer-red img {
+          width: 35px; }
+
+@media only screen and (max-width: 800px) {
+  footer {
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: 0; }
+    footer .footer-contenedor {
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      footer .footer-contenedor .footer-texto {
+        font-family: black;
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: center; }
+      footer .footer-contenedor .footer-redes-sociales {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        footer .footer-contenedor .footer-redes-sociales .footer-red {
+          width: 100%;
+          margin-left: 20px; }
+          footer .footer-contenedor .footer-redes-sociales .footer-red img {
+            width: 25px; } }
+
+.encabezado {
+  width: 100%;
+  height: auto; }
+  .encabezado img {
+    width: 100%;
+    height: 700px; }
+
+.servicios {
+  margin: 20px 40px 20px 40px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-columns: 100%;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-areas: "a1"  "a2" "a3"  "a4"; }
+
+.servicio-1 {
+  grid-area: a1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center; }
+
+.servicio-2 {
+  grid-area: a2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: center; }
+
+.servicio-3 {
+  grid-area: a3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center; }
+
+.servicio-4 {
+  grid-area: a4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: center; }
+
+.servicio-imagen {
+  width: 30%;
+  padding: 20px; }
+  .servicio-imagen img {
+    width: 100%;
+    height: 100%; }
+
+.servicio-descripcion {
+  width: 70%;
+  padding: 20px; }
+  .servicio-descripcion h1 {
+    font-family: "Arial";
+    font-size: 40px;
+    margin-bottom: 10px; }
+  .servicio-descripcion p {
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: justify; }
+
+@media only screen and (max-width: 800px) {
+  .encabezado {
+    width: 100%;
+    height: auto; }
+    .encabezado img {
+      width: 100%;
+      height: 250px; }
+  .servicios {
+    margin: 15px 0px 0px 0px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+    grid-template-areas: "a1"  "a2" "a3"  "a4"; }
+  .servicio-1 {
+    grid-area: a1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .servicio-2 {
+    grid-area: a2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .servicio-3 {
+    grid-area: a3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .servicio-4 {
+    grid-area: a4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .servicio-imagen {
+    width: 70%;
+    padding: 1px; }
+    .servicio-imagen img {
+      width: 100%;
+      height: 100%; }
+  .servicio-descripcion {
+    width: 80%;
+    padding: 30px; }
+    .servicio-descripcion h1 {
+      text-align: center;
+      font-family: "Arial";
+      font-size: 25px;
+      margin-bottom: 10px; }
+    .servicio-descripcion p {
+      font-family: "Arial";
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: justify; } }
+
+.encabezado-nosotros {
+  width: 100%;
+  height: auto; }
+  .encabezado-nosotros .encabezado-nosotros-imagen {
+    width: 100%;
+    height: 700px; }
+
+.empresa {
+  width: 100%;
+  height: 140px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .empresa .empresa-nombre {
+    width: 50%;
+    color: white;
+    font-family: "Arial";
+    font-size: 35px;
+    text-align: center; }
+  .empresa .empresa-detalle {
+    padding: 20px;
+    width: 50%;
+    color: white;
+    font-family: "Arial";
+    font-size: 15px;
+    text-align: justify; }
+
+.personal {
+  margin: 30px 30px 30px 30px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .personal .personal-tarjeta {
+    padding: 20px;
+    width: 100%;
+    height: auto; }
+    .personal .personal-tarjeta .personal-imagen {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
+      .personal .personal-tarjeta .personal-imagen img {
+        width: 100%;
+        height: 100%; }
+    .personal .personal-tarjeta .personal-descripcion {
+      width: 100%;
+      height: auto; }
+      .personal .personal-tarjeta .personal-descripcion h1 {
+        font-size: 35px;
+        font-family: "Arial";
+        margin-bottom: 10px;
+        text-align: center; }
+      .personal .personal-tarjeta .personal-descripcion p {
+        font-size: 13px;
+        font-family: "Arial";
+        margin-bottom: 10px;
+        text-align: justify; }
+
+.valores {
+  margin: 30px 30px 50px 30px; }
+  .valores .valores-contenedor {
+    margin-bottom: 30px;
+    font-family: "Arial"; }
+    .valores .valores-contenedor h1 {
+      font-size: 34px;
+      text-align: center; }
+    .valores .valores-contenedor p {
+      font-size: 20px;
+      padding: 20px;
+      text-align: center; }
+
+@media only screen and (max-width: 800px) {
+  .encabezado-nosotros {
+    width: 100%;
+    height: auto; }
+    .encabezado-nosotros .encabezado-nosotros-imagen {
+      width: 100%;
+      height: 250px; }
+  .empresa {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .empresa .empresa-nombre {
+      width: 100%;
+      color: white;
+      font-family: "Arial";
+      font-size: 15px;
+      text-align: center; }
+    .empresa .empresa-detalle {
+      padding: 10px;
+      width: 80%;
+      color: white;
+      font-family: "Arial";
+      font-size: 8px;
+      text-align: justify; }
+  .personal {
+    margin: 10px 10px 10px 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .personal .personal-tarjeta {
+      padding: 0px;
+      width: 100%;
+      height: auto; }
+      .personal .personal-tarjeta .personal-imagen {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px; }
+        .personal .personal-tarjeta .personal-imagen img {
+          width: 100%;
+          height: 100%; }
+      .personal .personal-tarjeta .personal-descripcion {
+        width: 100%;
+        height: auto; }
+        .personal .personal-tarjeta .personal-descripcion h1 {
+          font-size: 25px;
+          font-family: "Arial";
+          margin-bottom: 10px;
+          text-align: center; }
+        .personal .personal-tarjeta .personal-descripcion p {
+          font-size: 13px;
+          padding: 20px;
+          font-family: "Arial";
+          margin-bottom: 10px;
+          text-align: justify; }
+  .valores {
+    margin: 30px 30px 50px 30px; }
+    .valores .valores-contenedor {
+      margin-bottom: 30px;
+      font-family: "Arial"; }
+      .valores .valores-contenedor h1 {
+        font-size: 25px;
+        text-align: center; }
+      .valores .valores-contenedor p {
+        font-size: 15px;
+        padding: 20px;
+        text-align: justify; } }
+
+.contenedor-soluciones {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-soluciones .contendor-soluciones-descripcion {
+    width: 50%;
+    padding: 40px; }
+    .contenedor-soluciones .contendor-soluciones-descripcion h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: "Arial";
+      font-size: 35px; }
+    .contenedor-soluciones .contendor-soluciones-descripcion p {
+      text-align: justify;
+      margin-bottom: 10px;
+      font-family: "Arial";
+      font-size: 20px; }
+
+.contenedor-soluciones-imagenes {
+  width: 50%;
+  padding: 40px;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a1 a2" "a3 a4";
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-items: center;
+  align-items: center; }
+
+.solucion-imagen-1 {
+  grid-area: a1;
+  width: 100%;
+  height: 200px; }
+  .solucion-imagen-1 img {
+    width: 100%;
+    height: 100%; }
+
+.solucion-imagen-2 {
+  grid-area: a2;
+  width: 100%;
+  height: 200px; }
+  .solucion-imagen-2 img {
+    width: 100%;
+    height: 100%; }
+
+.solucion-imagen-3 {
+  grid-area: a3;
+  width: 100%;
+  height: 200px; }
+  .solucion-imagen-3 img {
+    width: 100%;
+    height: 100%; }
+
+.solucion-imagen-4 {
+  grid-area: a4;
+  width: 100%;
+  height: 200px; }
+  .solucion-imagen-4 img {
+    width: 100%;
+    height: 100%; }
+
+@media only screen and (max-width: 800px) {
+  .contenedor-soluciones {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse; }
+    .contenedor-soluciones .contendor-soluciones-descripcion {
+      width: 80%;
+      padding: 10px; }
+      .contenedor-soluciones .contendor-soluciones-descripcion h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Arial";
+        font-size: 25px; }
+      .contenedor-soluciones .contendor-soluciones-descripcion p {
+        text-align: justify;
+        margin-bottom: 10px;
+        font-family: "Arial";
+        font-size: 15px; }
+  .contenedor-soluciones-imagenes {
+    width: 90%;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a1 a2" "a3 a4";
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: center;
+    align-items: center; }
+  .solucion-imagen-1 {
+    grid-area: a1;
+    width: 100%;
+    height: 200px; }
+    .solucion-imagen-1 img {
+      width: 100%;
+      height: 100%; }
+  .solucion-imagen-2 {
+    grid-area: a2;
+    width: 100%;
+    height: 200px; }
+    .solucion-imagen-2 img {
+      width: 100%;
+      height: 100%; }
+  .solucion-imagen-3 {
+    grid-area: a3;
+    width: 100%;
+    height: 200px; }
+    .solucion-imagen-3 img {
+      width: 100%;
+      height: 100%; }
+  .solucion-imagen-4 {
+    grid-area: a4;
+    width: 100%;
+    height: 200px; }
+    .solucion-imagen-4 img {
+      width: 100%;
+      height: 100%; } }
+
+.contenedor-mensaje {
+  background-color: black;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-mensaje .contenedor-mensaje-texto {
+    color: white;
+    font-family: "Arial";
+    font-size: 38px;
+    margin-bottom: 10px; }
+  .contenedor-mensaje p {
+    color: white;
+    font-family: "Arial";
+    padding: 20px;
+    font-size: 14px;
+    text-align: center; }
+
+.contenedor-contacto {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row; }
+  .contenedor-contacto .contenedor-contacto-formulario {
+    width: 60%;
+    height: auto;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a5" "a6 a6" "a7 a7";
+    row-gap: 25px;
+    column-gap: 30px; }
+  .contenedor-contacto .contenedor-formulario-direccion {
+    width: 30%;
+    height: 470px;
+    padding: 40px;
+    background-color: #b4b4b4;
+    font-family: "Arial"; }
+    .contenedor-contacto .contenedor-formulario-direccion .direccion-titulo {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 15px; }
+    .contenedor-contacto .contenedor-formulario-direccion .direccion-descripcion {
+      text-align: justify;
+      font-size: 15px;
+      margin-bottom: 15px; }
+
+.fila-1 {
+  grid-area: a1;
+  width: 100%;
+  height: auto; }
+
+.fila-2 {
+  grid-area: a2;
+  width: 100%;
+  height: auto; }
+
+.fila-3 {
+  grid-area: a3;
+  width: 100%;
+  height: auto; }
+
+.fila-4 {
+  grid-area: a4;
+  width: 100%;
+  height: auto; }
+
+.fila-5 {
+  grid-area: a5;
+  width: 100%;
+  height: auto; }
+
+.fila-6 {
+  grid-area: a6;
+  width: 100%;
+  height: auto; }
+
+.fila-7 {
+  grid-area: a7;
+  width: 100%;
+  height: auto; }
+
+.contenedor-input-label {
+  display: block;
+  font-size: 14px;
+  font-family: "Arial";
+  margin-bottom: 9px; }
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 10px 5px 10px 5px; }
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px; }
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer; }
+
+button:hover {
+  background-color: #242424; }
+
+.contenedor-formulario-direccion {
+  width: 30%; }
+
+@media only screen and (max-width: 800px) {
+  .contenedor-mensaje {
+    background-color: black;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-mensaje .contenedor-mensaje-texto {
+      color: white;
+      font-family: "Arial";
+      font-size: 20px;
+      margin-bottom: 5px; }
+    .contenedor-mensaje p {
+      color: white;
+      font-family: "Arial";
+      padding: 20px;
+      font-size: 10px;
+      text-align: center; }
+  .contenedor-contacto {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row; }
+    .contenedor-contacto .contenedor-contacto-formulario {
+      width: 100%;
+      height: auto;
+      padding: 40px;
+      display: grid;
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: 1fr;
+      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7";
+      row-gap: 25px;
+      column-gap: 30px; }
+    .contenedor-contacto .contenedor-formulario-direccion {
+      display: none;
+      width: 100%;
+      height: 470px;
+      padding: 40px;
+      background-color: #b4b4b4;
+      font-family: "Arial"; }
+      .contenedor-contacto .contenedor-formulario-direccion .direccion-titulo {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px; }
+      .contenedor-contacto .contenedor-formulario-direccion .direccion-descripcion {
+        text-align: justify;
+        font-size: 15px;
+        margin-bottom: 15px; }
+  .fila-1 {
+    grid-area: a1;
+    width: 100%;
+    height: auto; }
+  .fila-2 {
+    grid-area: a2;
+    width: 100%;
+    height: auto; }
+  .fila-3 {
+    grid-area: a3;
+    width: 100%;
+    height: auto; }
+  .fila-4 {
+    grid-area: a4;
+    width: 100%;
+    height: auto; }
+  .fila-5 {
+    grid-area: a5;
+    width: 100%;
+    height: auto; }
+  .fila-6 {
+    grid-area: a6;
+    width: 100%;
+    height: auto; }
+  .fila-7 {
+    grid-area: a7;
+    width: 100%;
+    height: auto; }
+  .contenedor-input-label {
+    display: block;
+    font-size: 14px;
+    font-family: "Arial";
+    margin-bottom: 9px; }
+  input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px 5px 10px 5px; }
+  textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px 5px 10px 5px; }
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer; }
+  button:hover {
+    background-color: #242424; }
+  .contenedor-formulario-direccion {
+    width: 30%; } }
+
+.encabezado-ubicacion {
+  width: 100%;
+  height: auto; }
+  .encabezado-ubicacion .encabezado-ubicacion-contenedor {
+    padding: 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+    .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-titulo {
+      width: 60%;
+      margin-right: 40px; }
+      .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-titulo h1 {
+        font-family: "Arial";
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 30px; }
+      .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-titulo p {
+        font-family: "Arial";
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px; }
+    .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-imagen {
+      width: 40%; }
+
+.ubicaciones {
+  margin-top: 50px;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .ubicaciones .ubicacion-card {
+    width: 100%;
+    padding: 20px; }
+    .ubicaciones .ubicacion-card .ubicacion-contenido {
+      margin-bottom: 20px; }
+      .ubicaciones .ubicacion-card .ubicacion-contenido h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-family: "Arial"; }
+      .ubicaciones .ubicacion-card .ubicacion-contenido p {
+        text-align: justify;
+        font-size: 12px;
+        font-family: "Arial"; }
+    .ubicaciones .ubicacion-card .ubicacion-link {
+      background-color: #464646;
+      padding: 10px;
+      text-align: center; }
+      .ubicaciones .ubicacion-card .ubicacion-link a {
+        text-decoration: none;
+        color: gold;
+        font-family: "Arial"; }
+
+@media only screen and (max-width: 800px) {
+  .encabezado-ubicacion {
+    width: 100%;
+    height: auto; }
+    .encabezado-ubicacion .encabezado-ubicacion-contenedor {
+      padding: 50px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-titulo {
+        width: 100%;
+        margin-right: 40px; }
+        .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-titulo h1 {
+          font-family: "Arial";
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: 30px; }
+        .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-titulo p {
+          font-family: "Arial";
+          text-align: center;
+          font-size: 15px;
+          margin-bottom: 30px; }
+      .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-imagen {
+        width: 100%; }
+        .encabezado-ubicacion .encabezado-ubicacion-contenedor .encabezado-ubicacion-contenedor-imagen img {
+          width: 100%; }
+  .ubicaciones {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .ubicaciones .ubicacion-card {
+      width: 90%;
+      padding: 0px;
+      margin-bottom: 20px; }
+      .ubicaciones .ubicacion-card .ubicacion-contenido {
+        margin-bottom: 20px; }
+        .ubicaciones .ubicacion-card .ubicacion-contenido h1 {
+          text-align: center;
+          font-size: 24px;
+          margin-bottom: 15px;
+          font-family: "Arial"; }
+        .ubicaciones .ubicacion-card .ubicacion-contenido p {
+          text-align: justify;
+          font-size: 12px;
+          font-family: "Arial"; }
+      .ubicaciones .ubicacion-card .ubicacion-link {
+        background-color: #464646;
+        padding: 10px;
+        text-align: center; }
+        .ubicaciones .ubicacion-card .ubicacion-link a {
+          text-decoration: none;
+          color: gold;
+          font-family: "Arial"; } }
+
+* {
+  padding: 0;
+  margin: 0; }

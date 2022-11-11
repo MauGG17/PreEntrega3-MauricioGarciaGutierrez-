@@ -1,0 +1,197 @@
+.encabezado{
+
+    width: 100%;
+    height: auto;
+
+    img{
+        width: 100%; 
+        height: 700px;
+    }
+}
+
+.servicios{
+    margin: 20px 40px 20px 40px;
+
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+
+    grid-template-areas:"a1" 
+                        "a2"
+                        "a3" 
+                        "a4";
+}
+
+.servicio-1{
+    grid-area: a1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.servicio-2{
+    grid-area: a2;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+}
+
+.servicio-3{
+    grid-area: a3;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.servicio-4{
+    grid-area: a4;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+}
+
+.servicio-imagen{
+    width: 30%;
+    padding: 20px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.servicio-descripcion{
+    width: 70%;
+    padding: 20px;
+
+    h1{
+        font-family: $letra_fuente;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-family: $letra_fuente;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .encabezado{
+
+        width: 100%;
+        height: auto;
+    
+        img{
+            width: 100%; 
+            height: 250px;
+        }
+    }
+
+    .servicios{
+        margin: 15px 0px 0px 0px;
+    
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        
+        grid-template-areas:"a1" 
+                            "a2"
+                            "a3" 
+                            "a4";
+    }
+    
+    .servicio-1{
+        grid-area: a1;
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .servicio-2{
+        grid-area: a2;
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .servicio-3{
+        grid-area: a3;
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .servicio-4{
+        grid-area: a4;
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .servicio-imagen{
+        width: 70%;
+        padding: 1px;
+    
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .servicio-descripcion{
+        width: 80%;
+        padding: 30px;
+    
+        h1{
+            text-align: center;
+            font-family: $letra_fuente;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+    
+        p{
+            font-family: $letra_fuente;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+    }
+
+}
